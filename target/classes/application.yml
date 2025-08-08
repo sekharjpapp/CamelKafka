@@ -1,0 +1,20 @@
+server:
+  port: 8081
+
+spring:
+  profiles:
+    active: dev
+
+management:
+  security:
+    enabled: false
+
+camel:
+  springboot:
+  shutdownTimeout: 2
+  health.indicator.enabled: true
+
+--
+spring:
+  profiles:
+    active: dev
